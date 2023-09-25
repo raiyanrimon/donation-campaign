@@ -19,7 +19,7 @@ const Card = ({donation}) => {
         <figure><img className='w-full' src={picture} alt={title} /></figure>
         <div className="card-body" >
         <div className="badge font-medium badge-ghost" style={catStyle}>{category}</div> 
-          <h2 className="card-title font-semibold text-white" style={textStyle}>
+          <h2 className="card-title font-bold text-white text-base" style={textStyle}>
           {title}
           </h2>
           </div>

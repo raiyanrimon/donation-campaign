@@ -9,23 +9,28 @@ import {
 import Root from './Root';
 import Home from './Home/Home';
 import Description from './Description/Description';
+import Errorpage from './ErrorPage/Errorpage';
+import Statistics from './Statistics/Statistics';
+import Donation from './Donation/Donation';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root></Root>,
+    errorElement: <Errorpage></Errorpage>,
     children:[{
       path: '/',
       element: <Home></Home>
     },
     {
       path: '/donation',
-      element: <h1>nj</h1>
+      element: <Donation></Donation>,
+      loader: ()=> fetch('/data.json')
     },
     {
       path: '/stats',
-      element: <h1>Blo</h1>
+      element: <Statistics></Statistics>
     },
     {
       path: '/description/:id',
