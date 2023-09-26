@@ -17,12 +17,12 @@ const DonationPage = ({donate}) => {
     return (
        
         <>
-        <div className="card card-side bg-base-100 shadow-xl" style={cardStyle}>
-        <figure><img src={picture} alt={title}/></figure>
+        <div className="card lg:card-side card-compact bg-base-100 shadow-xl" style={cardStyle}>
+        <figure className="max-w-sm"><img src={picture} alt={title}/></figure>
         <div className="card-body">
             <h2 className="badge badge-ghost" style={catStyle}>{category}</h2>
           <h2 className="card-title">{title}</h2>
-          <p className="font-bold flex flex-grow" style={{color:category_bg_color }}>${price}.00</p>
+          <p className="font-bold" style={{color:category_bg_color }}>${price}.00</p>
           <div className="card-actions">
           <Link to={`/description/${id}`}><button className="btn btn-ghost text-white" style={textStyle}>View Details</button></Link>
           </div>
