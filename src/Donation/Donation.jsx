@@ -27,7 +27,7 @@ const Donation = () => {
                 donated.slice(0,dataLength).map(donate => <DonationPage key={donate.id} donate={donate}></DonationPage>)
             }
             </div>
-            <div className={dataLength === donated.length && 'hidden'}>
+            <div className={dataLength >= donated.length && 'hidden' }>
             <div className="text-center">
             <button onClick={()=> setDataLength(donated.length)} className="btn my-5 btn-primary">See All</button>
                 
