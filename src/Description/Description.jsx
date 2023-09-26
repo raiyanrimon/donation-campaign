@@ -25,9 +25,9 @@ const Description = () => {
             <div className="max-w-7xl mx-auto mt-10 space-y-10">
                 <div className="lg:relative">
                     <div className="flex justify-center"><img className="lg:min-w-screen lg:w-auto md:w-full lg:min-h-[calc(100vh-100px)]" src={donationId.picture} alt="" /></div>
-                   <div className=" lg:absolute lg:left-[150px] lg:top-[520px] text-center lg:text-justify bg-black lg:bg-opacity-40 bg-opacity-0 inset-0 lg:w-[980px]"> <button onClick={handleDonation} className=" border shadow-xl rounded-lg px-5 py-3 text-white font-semibold lg:ml-10 lg:my-5 " style={textBg}>Donate ${donationId.price}</button></div></div>
-                   <h2 className="font-bold text-2xl md:text-4xl lg:ml-[150px] ">{donationId.title}</h2>
-                   <p className=" lg:ml-[150px] text-lg lg:mr-[120px] ">{donationId.description}</p>
+                   <div className=" lg:absolute  lg:top-[760px] text-center lg:text-justify bg-black lg:bg-opacity-40  bg-opacity-10 inset-0 "> <button onClick={handleDonation} className=" border shadow-xl rounded-lg px-5 py-3 text-white font-semibold lg:ml-10 lg:my-5 " style={textBg}>Donate ${donationId.price}</button></div></div>
+                   <h2 className="font-bold text-2xl md:text-4xl  ">{donationId.title}</h2>
+                   <p className=" text-lg ">{donationId.description}</p>
                    <ToastContainer></ToastContainer>
                     
 
